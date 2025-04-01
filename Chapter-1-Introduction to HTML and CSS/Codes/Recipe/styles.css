@@ -1,0 +1,102 @@
+/* Apply a background image with a soft overlay */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('icecream.jpeg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #2c3e50;
+    text-align: center;
+    position: relative;
+}
+
+/* Adding a soft pastel overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.3); /* Light pink overlay */
+    z-index: -1;
+}
+
+/* Styling the main container */
+.container {
+    background: rgba(255, 255, 255, 0.92); /* Slightly more opaque for better contrast */
+    padding: 30px;
+    max-width: 750px;
+    margin: 50px auto;
+    border-radius: 18px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+/* Hover effect for the container */
+.container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the main heading */
+h1 {
+    font-family: "Playfair Display", serif;
+    color: #d35400;
+    font-size: 2.8em;
+    background: linear-gradient(to right, #ffcccb, #ff8c94);
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #444;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Section headers */
+h2 {
+    font-size: 2.4em;
+    color: #154360;
+    text-decoration: none;
+    border-bottom: 3px solid #ff8c94;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* List styles */
+ul, ol {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    margin-bottom: 12px;
+    padding: 8px;
+    background: rgba(255, 228, 225, 0.5);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Adding a hover effect to list items */
+li:hover {
+    color: #e74c3c;
+    background: rgba(255, 182, 193, 0.8);
+    transform: translateX(5px);
+}
+
+/* Smooth styling for ordered list */
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}

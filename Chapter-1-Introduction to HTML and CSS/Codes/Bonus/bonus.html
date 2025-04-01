@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference Guide</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Quick Reference Guide</h1>
+        <p>A quick guide for commonly used HTML tags and CSS properties.</p>
+    </header>
+
+    <section>
+        <h2>HTML Tags</h2>
+
+        <article>
+            <h3>&lt;h1&gt; - &lt;h6&gt;: Headings Tag</h3>
+            <p>Defines HTML headings from the largest (&lt;h1&gt;) to the smallest (&lt;h6&gt;).</p>
+            <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;p&gt;: Paragraph Tag</h3>
+            <p>Defines a block of text as a paragraph.</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;b&gt;: Bold Tag</h3>
+            <p>Makes text bold.</p>
+            <pre><code>&lt;b&gt;This text is bold&lt;/b&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;i&gt;: Italic Tag</h3>
+            <p>Makes text italic.</p>
+            <pre><code>&lt;i&gt;This text is italic&lt;/i&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;u&gt;: Underline Tag</h3>
+            <p>Underlines text.</p>
+            <pre><code>&lt;u&gt;This text is underlined&lt;/u&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;br&gt;: Line Break</h3>
+            <p>Inserts a line break in the text.</p>
+            <pre><code>This is line 1.&lt;br&gt;This is line 2.</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;img&gt;: Image Tag</h3>
+            <p>Embeds an image in the webpage.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</h3>
+            <p>Defines unordered (&lt;ul&gt;) and ordered (&lt;ol&gt;) lists with list items (&lt;li&gt;).</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;form&gt;: Form Tag</h3>
+            <p>Creates a form for user input.</p>
+            <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+        </article>
+    </section>
+
+    <section>
+        <h2>CSS Properties</h2>
+
+        <article>
+            <h3>color</h3>
+            <p>Sets the text color.</p>
+            <pre><code>p {
+    color: blue;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>font-family</h3>
+            <p>Specifies the font style of the text.</p>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>font-size</h3>
+            <p>Specifies the size of the text.</p>
+            <pre><code>h1 {
+    font-size: 24px;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>margin and padding</h3>
+            <p>Defines the spacing around an element.</p>
+            <pre><code>div {
+    margin: 20px;
+    padding: 10px;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>border-bottom</h3>
+            <p>Applies a bottom border to an element.</p>
+            <pre><code>h1 {
+    border-bottom: 2px solid black;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>side-borders (border-left, border-right)</h3>
+            <p>Defines borders on the left and right sides of an element.</p>
+            <pre><code>div {
+    border-left: 5px solid red;
+    border-right: 5px solid blue;
+}</code></pre>
+        </article>
+
+        <article>
+            <h3>background-color</h3>
+            <p>Defines the background color of an element.</p>
+            <pre><code>body {
+    background-color: #f0f0f0;
+}</code></pre>
+        </article>
+    </section>
+</body>
+</html>
