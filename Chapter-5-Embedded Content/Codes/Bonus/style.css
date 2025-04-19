@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/soundbox.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#soundboard-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#samples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+.sample {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sample:hover {
+  background: orange;
+  color: white;
+  transform: scale(1.05);
+}
+
+#text-to-speech {
+  width: 30%;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#text-to-speech h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+#tts-input {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#speak-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#speak-button:hover {
+  background: darkorange;
+}
+
+#pagination-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button#left-arrow,
+button#right-arrow {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button#left-arrow:hover,
+button#right-arrow:hover {
+  background: #357bd8;
+}
