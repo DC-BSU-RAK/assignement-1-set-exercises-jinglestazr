@@ -1,0 +1,92 @@
+/* Basic page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.181), rgba(255, 255, 255, 0.219)),
+              url('colour.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+  
+  /* Main game container */
+  .game-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.653);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* Header */
+  h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* RGB Value display */
+  #rgbDisplay {
+    font-weight: bold;
+    color: #0ace2739;
+  }
+  
+  /* Colour options grid */
+  .color-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  
+  /* Each colour box as a circle */
+.color-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Circle shape */
+  border: 3px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover effect */
+.color-box:hover {
+  transform: scale(1.1);
+  border-color: #555;
+}
+
+  
+  /* Feedback message */
+  #message {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Score and lives display */
+  .score-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  
+  /* Restart button */
+  #restartBtn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #restartBtn:hover {
+    background-color: #004d40;
+  }
+  
